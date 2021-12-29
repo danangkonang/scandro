@@ -42,7 +42,7 @@ export default function Router() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         {reducer.url === '' ? (
           <React.Fragment>
             <Stack.Screen name="Setting" component={Setting} />
